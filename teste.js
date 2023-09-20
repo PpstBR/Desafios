@@ -11,11 +11,11 @@ var click = NameButton.addEventListener('click', function(){
     if (valueSubmit >= 0 && valueSubmit <= 1903.98){ 
         tax = 0
     }else if (valueSubmit >= 1903.99 && valueSubmit <= 2826.65){
-        tax = (valueSubmit - (0.075 * valueSubmit)) - 142.80 
+        tax = (0.075 * valueSubmit) - 142.80 
     }else if (valueSubmit >= 2826.66 && valueSubmit <= 3751.05){
-        tax = (valueSubmit - (0.15 * valueSubmit)) - 354.80
+        tax = (0.15 * valueSubmit) - 354.80
     }else if (valueSubmit >= 3751.06 && valueSubmit <= 4664.68){
-        tax = (valueSubmit - (0.225 * valueSubmit)) - 636.13
+        tax = (0.225 * valueSubmit) - 636.13
     }else if (valueSubmit > 4664.69){
         tax = (valueSubmit * 0.275) - 869.36
     }else{
